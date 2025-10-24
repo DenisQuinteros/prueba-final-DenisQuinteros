@@ -225,3 +225,29 @@ body.dark footer {
     width: 100%;
   }
 }
+/* Estilos para validación en tiempo real */
+input:focus,
+select:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+input.error,
+select.error {
+  border-color: red !important;
+}
+
+input.warning {
+  border-color: orange !important;
+}
+
+input.success,
+select.success {
+  border-color: #0077b6 !important;
+}
+
+/* Transición suave para los bordes */
+input,
+select {
+  transition: border-color 0.3s ease;
+}
