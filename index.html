@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuarios - Prueba Final</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧾 Sistema de Registro de Usuarios</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#registro">Registro</a>
+      <a href="#lista">Lista</a>
+    </nav>
+    <button id="toggleTema">🌙 Modo Oscuro</button>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Esta aplicación permite registrar usuarios y visualizar la lista sin recargar la página.</p>
+    </section>
+
+    <section id="registro">
+      <h2>Registro de Usuario</h2>
+      <form id="formRegistro">
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <input type="password" id="password" placeholder="Contraseña" required />
+        <select id="pais">
+          <option value="">Seleccionar país</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Perú">Perú</option>
+          <option value="Chile">Chile</option>
+          <option value="Uruguay">Uruguay</option>
+        </select>
+        <button type="submit">Registrar</button>
+        <p id="mensaje"></p>
+      </form>
+    </section>
+
+    <section id="lista">
+      <h2>Usuarios Registrados</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>País</th>
+          </tr>
+        </thead>
+        <tbody id="tablaUsuarios"></tbody>
+      </table>
+
+      <!-- Aquí se montará el componente React -->
+      <div id="contadorReact"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 | Prueba Final - Diseño Web II | Denis Quinteros</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
